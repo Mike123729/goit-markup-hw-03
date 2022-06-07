@@ -29,7 +29,7 @@
 
 }
 
-/* ...HEADER для всех страниц... */
+
 
 /* контейнер  */
 .container {
@@ -38,9 +38,23 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* ////////////////////////////////////////////////////////// */
-    outline: 1px solid tomato;
+
 }
+
+/* секции отодвигающие контент внутри секций */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+/* отмена падинга для секции "чем мы занимаемся" */
+.no-padding {
+    padding-top: 0;
+}
+
+/* ...HESADER для всех страниц... */
 
 /* logo header*/
 
@@ -113,7 +127,7 @@ header .contact-item:focus {
 }
 
 /* Заголовок героя */
-.hero>.hero-title {
+.hero .hero-title {
     color: #FFFFFF;
 
 
@@ -128,7 +142,7 @@ header .contact-item:focus {
 }
 
 /* Кнопка в секции герой */
-.hero>.window {
+.hero .window {
 
     color: #FFFFFF;
     background-color: #2196F3;
@@ -151,8 +165,8 @@ header .contact-item:focus {
 }
 
 /* активизация фона кнопки при нажатии */
-.hero>.window:hover,
-.hero>.window:focus {
+.hero .window:hover,
+.hero .window:focus {
     background-color: #188CE8;
 }
 
@@ -167,18 +181,23 @@ header .contact-item:focus {
     text-transform: uppercase;
 
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 
 }
 
 /* cкрытый заголовок секции "наши преимущества"*/
+.features .features-title {
+    margin-top: 0;
+    margin-bottom: 0;
 
+}
 
 /* преимущества-текст */
 .features .features-text {
     color: var(--secondary-text-color);
 
-
+    margin-top: 0;
+    margin-bottom: 0;
 
     font-size: 14px;
     line-height: 1.71;
@@ -187,29 +206,35 @@ header .contact-item:focus {
 
 /* ...Секция чем мы занимаемся... */
 
-.work>.work-title {
+.work .work-title {
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 /* ...Секция Наша команда... */
 
-.team>.team-title {
+.team .team-title {
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
 
 }
 
 /* цвет фона */
 .team {
     background-color: #F5F4FA;
+
 }
 
 /* цвет фона карточек */
@@ -226,6 +251,9 @@ header .contact-item:focus {
     line-height: 1.19;
     text-align: center;
 
+    margin-top: 0;
+    margin-bottom: 10px;
+
 }
 
 /* должность в команде  */
@@ -236,6 +264,8 @@ header .contact-item:focus {
     line-height: 1.19;
     text-align: center;
 
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ...Подвал в сайте всех страниц... */
@@ -245,7 +275,7 @@ header .contact-item:focus {
 
 /* logo-footer */
 
-.data>.logo-down {
+.data .logo-down {
     color: #FFFFFF;
 
     font-family: 'Raleway', sans-serif;
@@ -285,8 +315,12 @@ header .contact-item:focus {
 
 /* MAIN на странице с портфолио */
 /* скрытый заголовок */
-.gallery>.gallery-title {
+.gallery .gallery-title {
     display: none;
+}
+
+.gallery .filter {
+    margin-bottom: 34px;
 }
 
 /*фильтр-кнопки на галерею */
@@ -297,9 +331,13 @@ header .contact-item:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
 
     cursor: pointer;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    padding: 6px 22px;
 
 }
 
@@ -311,7 +349,7 @@ header .contact-item:focus {
 
 /* подзаголовок для каждой марки */
 
-.gallery-item>.gallery-content {
+.gallery-item .gallery-content {
     text-decoration-line: none;
 }
 
@@ -325,6 +363,8 @@ header .contact-item:focus {
     letter-spacing: 0.06em;
 
     text-decoration-line: none;
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .gallery-item .gallery-text {
@@ -334,4 +374,6 @@ header .contact-item:focus {
     line-height: 1.88;
 
 
+    margin-top: 0;
+    margin-bottom: 0;
 }
