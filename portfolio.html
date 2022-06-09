@@ -58,15 +58,19 @@
           <h1 class="gallery-title">Наше портфолио</h1>
           <!-- фильтр портфолио -->
           <ul class="filter list">
-            <li><button type="button" class="filter-item">Все</button></li>
-            <li>
+            <li class="filter-icon">
+              <button type="button" class="filter-item">Все</button>
+            </li>
+            <li class="filter-icon">
               <button type="button" class="filter-item">Веб-сайты</button>
             </li>
-            <li>
+            <li class="filter-icon">
               <button type="button" class="filter-item">Приложения</button>
             </li>
-            <li><button type="button" class="filter-item">Дизайн</button></li>
-            <li>
+            <li class="filter-icon">
+              <button type="button" class="filter-item">Дизайн</button>
+            </li>
+            <li class="filter-icon">
               <button type="button" class="filter-item">Маркетинг</button>
             </li>
           </ul>
@@ -79,8 +83,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Технокряк</h2>
-                <p class="gallery-text">Веб-сайт</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Технокряк</h2>
+                  <p class="gallery-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -91,10 +97,12 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="gallery-text">Дизайн</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="gallery-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -105,8 +113,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Ресторан Seafood</h2>
-                <p class="gallery-text">Приложение</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Ресторан Seafood</h2>
+                  <p class="gallery-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -117,8 +127,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Проект Prime</h2>
-                <p class="gallery-text">Маркетинг</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Проект Prime</h2>
+                  <p class="gallery-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -129,8 +141,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Проект Boxes</h2>
-                <p class="gallery-text">Приложение</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Проект Boxes</h2>
+                  <p class="gallery-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -141,8 +155,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Inspiration has no Borders</h2>
-                <p class="gallery-text">Веб-сайт</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Inspiration has no Borders</h2>
+                  <p class="gallery-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -153,8 +169,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Издание Limited Edition</h2>
-                <p class="gallery-text">Дизайн</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Издание Limited Edition</h2>
+                  <p class="gallery-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -165,8 +183,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Проект LAB</h2>
-                <p class="gallery-text">Маркетинг</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Проект LAB</h2>
+                  <p class="gallery-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="gallery-item">
@@ -177,8 +197,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="gallery-subtitle">Growing Business</h2>
-                <p class="gallery-text">Приложение</p>
+                <div class="gallery-info">
+                  <h2 class="gallery-subtitle">Growing Business</h2>
+                  <p class="gallery-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -193,13 +215,16 @@
           <!-- adress and contacts -->
           <address class="data-address">
             г. Киев, пр-т Леси Украинки, 26 <br />
-            <a href="mailto:info@example.com" class="contact-address"
-              >info@example.com</a
-            >
-            <br />
-            <a href="tel:+380991111111" class="contact-address"
-              >+38 099 111 11 11</a
-            >
+
+            <div class="contact-list">
+              <a href="mailto:info@example.com" class="contact-address"
+                >info@example.com</a
+              >
+              <br />
+              <a href="tel:+380991111111" class="contact-address mail"
+                >+38 099 111 11 11</a
+              >
+            </div>
           </address>
         </div>
       </div>
