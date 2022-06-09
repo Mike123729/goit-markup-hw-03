@@ -29,20 +29,19 @@
 
 }
 
-
-
 /* контейнер  */
 .container {
-    width: 1200px;
-
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* $$$$$$$$$$$$$$$$$$$$$ УДАЛИТЬ */
+
+    width: 1200px;
+
+
 
 }
 
-/* секции отодвигающие контент внутри секций */
+/* секции заполняющие вату вверх-низ */
 
 .section {
     padding-top: 94px;
@@ -50,10 +49,6 @@
 
 }
 
-/* отмена падинга для секции "чем мы занимаемся" */
-.no-padding {
-    padding-top: 0;
-}
 
 /* ...HEADER для всех страниц... */
 
@@ -64,7 +59,6 @@ header {
 .container.header-box {
     display: flex;
     align-items: center;
-
 
 }
 
@@ -110,7 +104,7 @@ header .logo-upper {
     margin-right: 50px;
 }
 
-
+/* навигация сылки-страниц сайта */
 .site-nav .link {
     display: block;
     padding-top: 32px;
@@ -139,7 +133,7 @@ header .logo-upper {
 
 /* contacts */
 
-.container .contact {
+.header-box .contact {
     display: flex;
     margin-left: auto;
 }
@@ -182,8 +176,10 @@ header .contact-text:focus {
 
 /* Заголовок героя */
 .hero .hero-title {
-    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 30px;
 
+    color: #FFFFFF;
 
     font-weight: 900;
     font-size: 44px;
@@ -191,8 +187,6 @@ header .contact-text:focus {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    margin-top: 0;
-    margin-bottom: 30px;
 }
 
 /* Кнопка в секции герой */
@@ -233,6 +227,15 @@ header .contact-text:focus {
 
 }
 
+/* cкрытый заголовок секции "наши преимущества"*/
+.features .features-title {
+    color: transparent;
+    width: 0;
+    height: 0;
+    margin: -1px;
+}
+
+/*  сетка для секции  */
 .features-list .features-element {
     width: calc((100% - 3 * 30px) / 4);
     margin-right: 30px;
@@ -243,33 +246,27 @@ header .contact-text:focus {
 
 }
 
+
 /*       подзаголовки */
 .features .features-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 
-    margin-top: 0;
-    margin-bottom: 10px;
-
 }
 
-/* cкрытый заголовок секции "наши преимущества"*/
-.features .features-title {
-    color: transparent;
-    width: 0;
-    height: 0;
-    margin: -1px;
-}
+
 
 /* преимущества-текст */
 .features .features-text {
-    color: var(--secondary-text-color);
-
     margin-top: 0;
     margin-bottom: 0;
+
+    color: var(--secondary-text-color);
 
     font-size: 14px;
     line-height: 1.71;
@@ -278,15 +275,21 @@ header .contact-text:focus {
 
 /* ...Секция чем мы занимаемся... */
 
+/* отмена падинга-верха для секции  */
+.no-padding {
+    padding-top: 0;
+}
+
+/* заголовок  */
 .work .work-title {
+    margin-top: 0;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 
-    margin-top: 0;
-    margin-bottom: 50px;
 }
 
 .work .work-list {
@@ -314,14 +317,13 @@ header .contact-text:focus {
 }
 
 .team .team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
-    margin-top: 0;
-    margin-bottom: 50px;
 
 }
 
@@ -331,14 +333,16 @@ header .contact-text:focus {
 
 /* цвет фона карточек */
 .team .team-item {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+
     background-color: var(--primary-white-bgcolor);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    width: calc((100% - 3 * 30px) / 4);
-    margin-right: 30px;
+
 
 }
 
@@ -350,31 +354,31 @@ header .contact-text:focus {
 /* имя работника */
 
 .team-item>.team-name {
+    margin-top: 30px;
+    margin-bottom: 0;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 
-    margin-top: 30px;
-    margin-bottom: 0;
-
 }
 
 /* должность в команде  */
 .team-item>.team-position {
+    margin-top: 10px;
+    margin-bottom: 0;
+
     color: #757575;
 
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 
-    margin-top: 10px;
-    margin-bottom: 0;
-
     /* временний padding-bottom, для сходства с макетом,потом удалю*/
     padding-bottom: 30px;
 }
+
 
 /* ...Подвал в сайте всех страниц... */
 .basement {
@@ -393,6 +397,7 @@ header .contact-text:focus {
 
     text-decoration-line: none;
 
+
 }
 
 .logo-down .accent {
@@ -401,6 +406,9 @@ header .contact-text:focus {
 
 /* Адресс */
 .data .data-address {
+    margin-top: 20px;
+    margin-bottom: 0;
+
     color: #FFFFFF;
 
     font-style: normal;
@@ -408,7 +416,6 @@ header .contact-text:focus {
     font-size: 14px;
     line-height: 1.71;
 
-    margin-top: 20px;
 }
 
 /* контакты */
@@ -425,6 +432,11 @@ header .contact-text:focus {
 .data-address .contact-list {
     margin-top: 9px;
 
+}
+
+.basement .data {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contact-address.mail {
@@ -449,12 +461,15 @@ header .contact-text:focus {
     justify-content: center;
 }
 
-.filter .filter-icon:not(:last-child) {
+.filter .filter-btn:not(:last-child) {
     margin-right: 9px;
 }
 
 /*фильтр-кнопки на галерею */
 .filter .filter-item {
+    padding: 6px 22px;
+    text-align: center;
+
     color: var(--primary-text-color);
     background-color: #F5F4FA;
 
@@ -466,10 +481,12 @@ header .contact-text:focus {
 
     border: 1px solid transparent;
     border-radius: 4px;
-    text-align: center;
-    padding: 6px 22px;
+
+
 
 }
+
+/* ховер на фильтр */
 
 .filter .filter-item:hover,
 .filter .filter-item:focus {
@@ -482,6 +499,8 @@ header .contact-text:focus {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* сетка для списка товаров */
 
 .gallery-catalogue .gallery-item {
     width: calc((100% - 2 * 30px) / 3);
@@ -500,6 +519,7 @@ header .contact-text:focus {
     margin-bottom: 0;
 }
 
+/* убираем стандартную линию-подчеркивание для сылки */
 .gallery-item .gallery-content {
     text-decoration-line: none;
 
@@ -509,20 +529,26 @@ header .contact-text:focus {
     display: block;
 }
 
+/* инфо под картинкой  */
+
 .gallery-item .gallery-info {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-top: 20px;
+
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     ;
 }
 
+/* подазголовк  */
 .gallery-item .gallery-subtitle {
-    color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 4px;
 
+    color: var(--primary-text-color);
 
     font-weight: 700;
     font-size: 18px;
@@ -530,11 +556,9 @@ header .contact-text:focus {
     letter-spacing: 0.06em;
 
     text-decoration-line: none;
-    margin-top: 0;
-    margin-bottom: 0;
-
 }
 
+/* наименование товара */
 .gallery-item .gallery-text {
     color: var(--secondary-text-color);
 
