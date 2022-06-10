@@ -364,6 +364,10 @@ header .contact-text:focus {
 
 }
 
+.team-item img {
+    display: block;
+}
+
 /* должность в команде  */
 .team-item>.team-position {
     margin-top: 10px;
