@@ -49,6 +49,20 @@
 
 }
 
+/* скрытие заголовка */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* ...HEADER для всех страниц... */
 
@@ -170,14 +184,21 @@ header .contact-text:focus {
 
 .hero {
     background-color: var(--secondary-bg-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     text-align: center;
+
 }
 
 /* Заголовок героя */
 .hero .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+
 
     color: #FFFFFF;
 
@@ -227,13 +248,6 @@ header .contact-text:focus {
 
 }
 
-/* cкрытый заголовок секции "наши преимущества"*/
-.features .features-title {
-    color: transparent;
-    width: 0;
-    height: 0;
-    margin: -1px;
-}
 
 /*  сетка для секции  */
 .features-list .features-element {
@@ -300,6 +314,11 @@ header .contact-text:focus {
 .work-list .work-item {
     width: calc((100% - 2 * 30px)/3);
     margin-right: 30px;
+
+}
+
+.work-item img {
+    display: block;
 }
 
 .work-list .work-item:last-child {
@@ -315,6 +334,7 @@ header .contact-text:focus {
     background-color: #F5F4FA;
 
 }
+
 
 .team .team-title {
     margin-top: 0;
@@ -351,47 +371,55 @@ header .contact-text:focus {
 
 }
 
-/* имя работника */
 
-.team-item>.team-name {
-    margin-top: 30px;
-    margin-bottom: 0;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-
-}
 
 .team-item img {
     display: block;
 }
 
+.team-item .team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+/* имя работника */
+
+.team-item .team-name {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+
+}
+
 /* должность в команде  */
-.team-item>.team-position {
-    margin-top: 10px;
+.team-item .team-position {
     margin-bottom: 0;
+    margin-top: 10px;
 
     color: #757575;
 
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
 
-    /* временний padding-bottom, для сходства с макетом,потом удалю*/
-    padding-bottom: 30px;
 }
 
 
 /* ...Подвал в сайте всех страниц... */
 .basement {
     background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 /* logo-footer */
 
-.data .logo-down {
+.basement .logo-down {
     color: #FFFFFF;
 
     font-family: 'Raleway', sans-serif;
@@ -409,7 +437,7 @@ header .contact-text:focus {
 }
 
 /* Адресс */
-.data .data-address {
+.basement .data-address {
     margin-top: 20px;
     margin-bottom: 0;
 
@@ -424,44 +452,26 @@ header .contact-text:focus {
 
 /* контакты */
 .data-address .contact-address {
+    margin-top: 9px;
+
     color: rgba(255, 255, 255, 0.6);
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 
-    text-decoration-line: none;
-}
-
-.data-address .contact-list {
-    margin-top: 9px;
-
-}
-
-.basement .data {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.contact-address.mail {
-    margin-top: 9px;
     display: block;
+    text-decoration-line: none;
 }
 
 /* .................PORTFOLIO PAGE................. */
 
 /* MAIN на странице с портфолио */
-/* скрытый заголовок */
-.gallery .gallery-title {
-    color: transparent;
-    width: 0;
-    height: 0;
-    margin: -1px;
-}
+
 
 .gallery .filter {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
