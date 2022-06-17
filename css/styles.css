@@ -517,7 +517,7 @@ header .contact-text:focus {
 /* сетка для списка товаров */
 
 .gallery-catalogue .gallery-item {
-    width: calc((100% - 2 * 30px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 
